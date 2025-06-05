@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: "Open Sans", sans-serif;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/*---------------HOME-PAGE------------------*/
+
+/*---------------HEADER----------------*/
+header{
+    color: white;
+    font-size: 25px;
+    height: 800px;
+}
+.pages-height{
+    height: 200px;
+}
+.home-header{
+    background-image: url(../img/portada.png); 
+    background-position: center;
+    background-size: cover;
+}
+.back-color{
+    background-color: rgb(62, 23, 130); 
+}
+nav{
+    position: sticky !important;
+    top: 0;
+}
+.navbar-toggler{
+    background-color: white;
+}
+header nav h2{
+    font-size: 75px;
+    margin-left: 2%;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    font-weight: 600;
+    font-size: 30px;
+}
+header h1{
+    padding-top: 2%;
+    width: 100%;
+    text-align: center;
+    font-size: 75px;
+    font-family: "Merienda", sans-serif ;
+    font-weight: 950;
+}
+header nav ul li a{
+    color: white !important;
+}
+.dropdown-menu{
+    background-color: black !important;
+}
+.boton{
+    border: 2px solid white;
+    color: white;
+}
+.boton:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+/*---------------MAIN------------------*/
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 25px ;
+    text-indent: 5%;
+    text-align: left;
+}
+.hero h2{
+    margin-top: 2%;
+}
+.hero div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+}
+.hero article{
+    width: 380px;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+main div{
+    flex-wrap: wrap;
+}
+.hero img{
+    height: 218px;
+}
+.hero article a{
+    text-decoration: none;
+    color: blueviolet;
+}
+/*---------------FOOTER----------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 250px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+}
+footer a{
+    margin: 10px;
+}
+.wsp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+/*---------------HOME-PAGE------------------*/
+.consola img{
+    width: 380px;
+    height: 218px;
+}
+
+@media (max-width: 696px){
+    header{
+        height: 500px;
+    }
+}
+
+@media (max-width: 445px) {
+    header h1{
+        font-size: 45px;
+    }
+    .hero img{
+        width: 250px;
+        height: 150px;
+    }
+    footer{
+        flex-direction: row;
+    }
+    .wsp{
+        right: 10px;
+        bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

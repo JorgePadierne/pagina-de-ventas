@@ -1,0 +1,14 @@
+//*?variables
+
+$color-principal:rgb(62, 23, 130);
+$color-secundario:black;
+
+//*?listas
+$colores: gold,silver,blue,white,black,green;
+
+//*?mixin
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

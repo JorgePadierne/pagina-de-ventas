@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 250px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 35px;
+
+    section {
+        a {
+            margin: 10px;
+            display: inline-block;
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.wsp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}

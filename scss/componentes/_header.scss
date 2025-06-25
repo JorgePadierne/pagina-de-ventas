@@ -1,0 +1,58 @@
+header {
+    color: white;
+    font-size: 25px;
+    height: 800px;
+
+    &.home-header {
+        background-image: url(../img/portada.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    nav {
+        position: sticky !important;
+        top: 0;
+
+        h2 {
+            font-size: 75px;
+            margin-left: 2%;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 5px;
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        ul li a {
+            color: white !important;
+        }
+    }
+
+    h1 {
+        padding-top: 2%;
+        width: 100%;
+        text-align: center;
+        font-size: 75px;
+        font-family: "Merienda", sans-serif;
+        font-weight: 950;
+    }
+}
+
+.pages-height {
+    height: 200px;
+}
+
+.back-color {
+    background-color: rgb(62, 23, 130);
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.dropdown-menu {
+    background-color: black !important;
+}

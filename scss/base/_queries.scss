@@ -1,0 +1,109 @@
+@media (max-width: 1079px) {
+    .blog {
+
+        article section img,
+        section div img {
+            width: 350px;
+            height: 200px;
+        }
+
+        article section h3 {
+            font-size: 25px;
+        }
+
+        section h4 {
+            font-size: 20px;
+        }
+
+        section ul {
+            font-size: 15px;
+        }
+
+        section div ul li {
+            font-size: 20px;
+        }
+
+        article section p {
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 976px) {
+    .grids-header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .grids-span {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 696px) {
+    header {
+        height: 500px;
+    }
+
+    footer img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 591px) {
+    .blog {
+
+        section div,
+        article {
+            flex-direction: column;
+        }
+
+        article section img,
+        section div img {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .guia-transition {
+        width: 200px;
+        height: 200px;
+    }
+
+    .blog {
+
+        section div img,
+        article section img {
+            width: 220px;
+            height: 120px;
+        }
+    }
+}
+
+@media (max-width: 445px) {
+    header h1 {
+        font-size: 45px;
+    }
+
+    .hero article img {
+        width: 220px;
+        height: 120px;
+    }
+
+    .wsp {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .grids-header {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .blog section iframe {
+        width: 220px;
+        height: 120px;
+    }
+}

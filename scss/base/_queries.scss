@@ -1,13 +1,13 @@
 @media (max-width: 1079px) {
     .blog {
 
-        article section img,
-        section div img {
+        section article img,
+        section article img {
             width: 350px;
             height: 200px;
         }
 
-        article section h3 {
+        section article h3 {
             font-size: 25px;
         }
 
@@ -19,11 +19,11 @@
             font-size: 15px;
         }
 
-        section div ul li {
-            font-size: 20px;
+        section article ul li {
+            font-size: 15px;
         }
 
-        article section p {
+        section article p {
             font-size: 15px;
         }
     }
@@ -41,6 +41,9 @@
 }
 
 @media (max-width: 696px) {
+    .section1{
+        flex-direction: column;
+    }
     header {
         height: 500px;
     }
@@ -54,13 +57,13 @@
 @media (max-width: 591px) {
     .blog {
 
-        section div,
+        section article,
         article {
             flex-direction: column;
         }
 
-        article section img,
-        section div img {
+        section article img,
+        section article img {
             margin: 0;
         }
     }
@@ -74,8 +77,8 @@
 
     .blog {
 
-        section div img,
-        article section img {
+        section article img,
+        section article img {
             width: 220px;
             height: 120px;
         }

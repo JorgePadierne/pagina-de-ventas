@@ -10,7 +10,7 @@
         font-weight: 300;
     }
 
-    article {
+    section {
         @include flex(flex,space-evenly,center);
         flex-wrap: wrap;
     }

@@ -1,15 +1,21 @@
+.section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
 .blog {
-    article {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        section {
+    section {
+        article {
             h3 {
                 text-align: center;
                 color: rgb(62, 23, 130);
                 font-size: 40px;
-                text-indent: 5%;
                 margin: 5% 0 5% 5%;
             }
 
@@ -29,7 +35,7 @@
     }
 
     section {
-        div {
+        article {
             display: flex;
             justify-content: space-between;
             align-items: center;

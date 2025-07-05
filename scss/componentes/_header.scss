@@ -21,9 +21,14 @@ header {
         a {
             text-decoration: none;
             color: white;
-            margin: 5px;
             font-weight: 600;
-            font-size: 30px;
+            font-size: 20px;
+            border-radius: 10px !important;
+
+            &:hover{
+                background-color: rgb(62, 23, 130) !important;
+                transition: 0.5s;
+            }
         }
 
         ul li a {
@@ -39,6 +44,16 @@ header {
         font-family: "Merienda", sans-serif;
         font-weight: 950;
     }
+}
+
+.navbar-white:hover{
+    background-color: transparent !important;
+}
+
+.underline:hover{
+    background-color: transparent !important;
+    border-bottom: 3px solid white !important;
+    transition: none !important;
 }
 
 .pages-height {

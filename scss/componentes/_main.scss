@@ -1,5 +1,5 @@
 .boton {
-    border: 2px solid white;
+    border: 3px solid white;
     color: white;
 
     &:hover {
@@ -56,6 +56,7 @@
 
         img {
             height: 218px;
+            border-radius: 15px;
         }
 
         button {

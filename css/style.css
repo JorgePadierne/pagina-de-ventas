@@ -32,9 +32,13 @@ header nav h2 {
 header nav a {
   text-decoration: none;
   color: white;
-  margin: 5px;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
+  border-radius: 10px !important;
+}
+header nav a:hover {
+  background-color: rgb(62, 23, 130) !important;
+  transition: 0.5s;
 }
 header nav ul li a {
   color: white !important;
@@ -46,6 +50,16 @@ header h1 {
   font-size: 75px;
   font-family: "Merienda", sans-serif;
   font-weight: 950;
+}
+
+.navbar-white:hover {
+  background-color: transparent !important;
+}
+
+.underline:hover {
+  background-color: transparent !important;
+  border-bottom: 3px solid white !important;
+  transition: none !important;
 }
 
 .pages-height {
@@ -65,7 +79,7 @@ header h1 {
 }
 
 .boton {
-  border: 2px solid white;
+  border: 3px solid white;
   color: white;
 }
 .boton:hover {
@@ -122,6 +136,7 @@ header h1 {
 }
 .hero article img {
   height: 218px;
+  border-radius: 15px;
 }
 .hero article button {
   text-decoration: none;
@@ -145,11 +160,12 @@ header h1 {
 footer {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: rgb(62, 23, 130);
   height: 250px;
   justify-content: space-around;
   align-items: center;
   font-size: 35px;
+  margin-top: 30px;
 }
 footer section a {
   margin: 10px;
@@ -161,6 +177,7 @@ footer section a:hover {
 }
 
 .wsp {
+  background-color: transparent;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -186,9 +203,14 @@ footer section a:hover {
   margin: 5% 0 5% 5%;
 }
 .blog section article img {
+  border-radius: 20px;
   width: 550px;
   height: 300px;
   margin: 2% 0 0 5%;
+}
+.blog section article img:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
 }
 .blog section article p {
   margin-left: 5%;
@@ -252,14 +274,14 @@ footer section a:hover {
   margin-top: 5%;
   width: 400px;
   height: 400px;
-  border: 5px solid white;
+  border: 5px solid rgb(62, 23, 130);
   border-radius: 10%;
   background-position: center;
   background-size: cover;
 }
 .guia-transition:hover {
-  transform: scale(1.05);
-  transition: 0.3s;
+  transform: scale(1.03);
+  transition: 0.5s;
 }
 .guia-section1 {
   background-image: url(../img/guia1.webp);
@@ -297,6 +319,9 @@ footer section a:hover {
   }
 }
 @media (max-width: 976px) {
+  .underline {
+    width: 100px;
+  }
   .grids-header {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;

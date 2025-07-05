@@ -30,6 +30,9 @@
 }
 
 @media (max-width: 976px) {
+    .underline{
+        width: 100px;
+}
     .grids-header {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;

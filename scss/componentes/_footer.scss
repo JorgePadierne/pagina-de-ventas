@@ -1,11 +1,12 @@
 footer {
     display: flex;
     flex-direction: column;
-    color: white;
+    color: rgb(62,23,130);
     height: 250px;
     justify-content: space-around;
     align-items: center;
     font-size: 35px;
+    margin-top: 30px;
 
     section {
         a {
@@ -20,6 +21,7 @@ footer {
 }
 
 .wsp {
+    background-color: transparent;
     position: fixed;
     right: 20px;
     bottom: 20px;

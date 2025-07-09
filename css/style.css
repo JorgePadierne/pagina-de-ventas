@@ -357,6 +357,16 @@ footer section a:hover {
     width: 200px;
     height: 200px;
   }
+  .guia h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .guia h4 {
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+  }
   .blog section article img,
   .blog section article img {
     width: 220px;

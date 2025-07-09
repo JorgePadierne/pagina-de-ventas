@@ -52,6 +52,11 @@ header h1 {
   font-weight: 950;
 }
 
+.d-flex input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px black;
+}
+
 .dropdown-menu li {
   padding-left: 15px !important;
   padding-right: 15px !important;
@@ -162,23 +167,103 @@ header h1 {
   height: 218px;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  color: rgb(62, 23, 130);
-  height: 250px;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 35px;
-  margin-top: 30px;
+.site-footer {
+  background-color: rgb(15, 15, 15);
+  color: #eee;
+  padding: 20px 80px;
+  margin-top: 50px;
 }
-footer section a {
-  margin: 10px;
+.site-footer p {
+  margin: 0 !important;
+}
+.site-footer .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.site-footer .footer-top .footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+.site-footer .footer-top .footer-col p a {
+  color: rgb(109, 45, 219);
+}
+.site-footer .footer-top .footer-col h4 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+.site-footer .footer-top .footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.site-footer .footer-top .footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.site-footer .footer-top .footer-col ul li a:hover {
+  color: rgb(62, 23, 130);
+  transition: 0.5s;
+}
+.site-footer .footer-top .social-icons {
+  display: flex;
+}
+.site-footer .footer-top .social-icons a {
+  margin-right: 8px;
+  color: #ccc;
+  font-size: 20px;
   display: inline-block;
 }
-footer section a:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
+.site-footer .footer-top .social-icons a:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.site-footer .footer-top .subscribe-form {
+  margin-top: 10px;
+  display: flex;
+}
+.site-footer .footer-top .subscribe-form input {
+  flex: 1;
+  padding: 6px 8px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  max-width: 200px;
+}
+.site-footer .footer-top .subscribe-form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(62, 23, 130);
+}
+.site-footer .footer-top .subscribe-form button {
+  padding: 6px 12px;
+  border: none;
+  background: rgb(62, 23, 130);
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+.site-footer .footer-top .subscribe-form button:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+.site-footer .footer-bottom {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+}
+.site-footer .footer-bottom a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.site-footer .footer-bottom a:hover {
+  color: rgb(62, 23, 130);
+  transition: 0.5s;
+}
+.site-footer hr {
+  border: 0;
+  height: 1px;
+  background: #444;
+  margin: 20px 0;
 }
 
 .wsp {
@@ -186,6 +271,11 @@ footer section a:hover {
   position: fixed;
   right: 20px;
   bottom: 20px;
+}
+
+.wsp:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 
 .section1 {
@@ -324,6 +414,9 @@ footer section a:hover {
   }
 }
 @media (max-width: 976px) {
+  .subscribe-form input {
+    width: 100px;
+  }
   .underline {
     width: 100px;
   }
@@ -348,6 +441,10 @@ footer section a:hover {
   }
 }
 @media (max-width: 591px) {
+  .blog section article ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .blog section article,
   .blog article {
     flex-direction: column;

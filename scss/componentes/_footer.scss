@@ -1,28 +1,136 @@
-footer {
-    display: flex;
-    flex-direction: column;
-    color: rgb(62,23,130);
-    height: 250px;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 35px;
-    margin-top: 30px;
+.site-footer {
+  background-color: rgb(15, 15, 15);
+  color: #eee;
+  padding: 20px 80px;
+  margin-top: 50px;
 
-    section {
+  p {
+    margin: 0 !important;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+    .footer-col {
+      flex: 1;
+      min-width: 200px;
+
+      p {
         a {
-            margin: 10px;
-            display: inline-block;
-            &:hover {
-                transform: scale(1.1);
-                transition: 0.3s;
-            }
+          color: rgb(109, 45, 219);
         }
+      }
+
+      h4 {
+        margin-bottom: 10px;
+        color: #fff;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          a {
+            color: #ccc;
+            text-decoration: none;
+
+            &:hover {
+              color: rgb(62, 23, 130);
+              transition: 0.5s;
+            }
+          }
+        }
+      }
     }
+
+    .social-icons {
+      display: flex;
+
+      a {
+        margin-right: 8px;
+        color: #ccc;
+        font-size: 20px;
+        display: inline-block;
+
+        &:hover {
+          transform: scale(1.05);
+          transition: 0.5s;
+        }
+      }
+    }
+
+    .subscribe-form {
+      margin-top: 10px;
+      display: flex;
+
+      input {
+        flex: 1;
+        padding: 6px 8px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        max-width: 200px;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 2px rgb(62, 23, 130);
+        }
+      }
+
+      button {
+        padding: 6px 12px;
+        border: none;
+        background: rgb(62, 23, 130);
+        color: #fff;
+        border-radius: 0 10px 10px 0;
+        cursor: pointer;
+
+        &:hover {
+          background-color: black;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+
+    a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 5px;
+
+      &:hover {
+        color: rgb(62, 23, 130);
+        transition: 0.5s;
+      }
+    }
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #444;
+    margin: 20px 0;
+  }
 }
 
+
 .wsp {
-    background-color: transparent;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+  background-color: transparent;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+
+}
+
+.wsp:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }

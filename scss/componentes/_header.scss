@@ -46,6 +46,17 @@ header {
     }
 }
 
+.d-flex{
+
+    input{
+
+        &:focus{
+            outline: none;
+            box-shadow: 0 0 0 3px black;
+        }
+    }
+
+}
 .dropdown-menu li{
     padding-left: 15px !important;
     padding-right: 15px !important;

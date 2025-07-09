@@ -30,6 +30,9 @@
 }
 
 @media (max-width: 976px) {
+    .subscribe-form input{
+        width: 100px;
+    }
     .underline{
         width: 100px;
 }
@@ -58,13 +61,16 @@
 }
 
 @media (max-width: 591px) {
+    .blog section article ul{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     .blog {
 
         section article,
         article {
             flex-direction: column;
         }
-
         section article img,
         section article img {
             margin: 0;
@@ -103,6 +109,7 @@
 }
 
 @media (max-width: 445px) {
+    
     header h1 {
         font-size: 45px;
     }
